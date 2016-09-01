@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rlTitleCanvas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:layout_alignParentTop="true">
+        <TextView
+            android:id="@+id/tvTitleCanvas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shared Canvas"
+            android:textSize="14dp"
+            android:textColor="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:padding="5dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.mike.touchtoolsdemo.TouchToolView
+            android:id="@+id/drawing"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background" />
+        <LinearLayout
+            android:id="@+id/llButtonsBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:padding="5dp">
+            <ImageView
+                android:id="@+id/imgPen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/pen" />
+            <ImageView
+                android:id="@+id/imgErase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/pinkeraser" />
+            <ImageView
+                android:id="@+id/imgDoneCanvas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/dryerase" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

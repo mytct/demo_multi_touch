@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></RelativeLayout>
+
+    <!--<com.mike.touchtoolsdemo.CustomImage
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"/>-->
+
+    <!--<com.mike.touchtoolsdemo.MultiTouchView
+        android:id="@+id/multiTouchView"
+        android:background="@drawable/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />-->
+    <com.mike.touchtoolsdemo.TouchToolView
+        android:id="@+id/drawing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background" />
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <ImageButton
+                android:id="@+id/btn1"
+                android:layout_width="100dp"
+                android:background="@android:color/transparent"
+                android:layout_margin="10dp"
+                android:src="@drawable/pen"
+                android:scaleType="centerInside"
+                android:layout_height="100dp" />
+
+            <ImageButton
+                android:id="@+id/btn2"
+                android:layout_width="100dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/pinkeraser"
+                android:layout_margin="10dp"
+                android:background="@android:color/transparent"
+                android:layout_height="100dp" />
+
+            <ImageButton
+                android:id="@+id/btn3"
+                android:layout_width="100dp"
+                android:scaleType="fitCenter"
+                android:layout_margin="10dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/dryerase"
+                android:layout_height="100dp" />
+
+            <ImageButton
+                android:id="@+id/btn4"
+                android:layout_width="100dp"
+                android:src="@drawable/magglass"
+                android:scaleType="centerInside"
+                android:layout_margin="10dp"
+                android:background="@android:color/transparent"
+                android:layout_height="100dp" />
+
+            <ImageButton
+                android:id="@+id/btn5"
+                android:src="@drawable/camera"
+                android:layout_width="100dp"
+                android:scaleType="centerInside"
+                android:background="@android:color/transparent"
+                android:layout_margin="10dp"
+                android:layout_height="100dp" />
+
+            <ImageButton
+                android:id="@+id/btn6"
+                android:layout_width="100dp"
+                android:background="@android:color/transparent"
+                android:layout_margin="10dp"
+                android:src="@drawable/mouse"
+                android:scaleType="centerInside"
+                android:layout_height="100dp" />
+
+            <ImageButton
+                android:id="@+id/btn7"
+                android:layout_width="100dp"
+                android:src="@drawable/tapemeasure1"
+                android:layout_margin="10dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:layout_height="100dp" />
+
+            <ImageButton
+                android:id="@+id/btn8"
+                android:layout_width="100dp"
+                android:scaleType="centerInside"
+                android:layout_margin="10dp"
+                android:visibility="gone"
+                android:layout_height="100dp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>
